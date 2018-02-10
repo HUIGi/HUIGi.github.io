@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -88,7 +88,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/24/人類簡史/" data-id="cjdhg5klf0001woutubtbfbh5" class="article-share-link">Compartir</a>
+      <a data-url="http://yoursite.com/2018/01/24/人類簡史/" data-id="cjdhgl13g0000mkuttksi8mui" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -151,12 +151,32 @@
 </tr>
 </tbody>
 </table>
-<h3 id="辉辉的日常代码"><a href="#辉辉的日常代码" class="headerlink" title="辉辉的日常代码"></a>辉辉的日常代码</h3></blockquote>
+<h3 id="2017-总结"><a href="#2017-总结" class="headerlink" title="2017 总结"></a>2017 总结</h3><p>HTML 4.0<br>网页开发<br> 结构：HTML4.0<br> 样式：css<br> 行为：js<br>HTML5<br> 结构：HTML5<br> 样式：css<br> 行为：js API地理定位  web存储 拖拽</p>
+</blockquote>
+<p>HTML5广义的概念：代表着浏览器技术发展的一个新阶段，HTML5+css3+js API 一套前端技术的结合</p>
+<p>HTML5语法<br>更简洁<br>更宽松<br>单标签没有写关闭符号<br>双标签省略结束标签<br>html head body tbody 可以完全忽略<br>实际开发中应规范书写</p>
+<p>标签语义化，在合适的地方用合适的标签<br>根据页面里不同的内容，选择最合适的标签，而不是通篇只用一种标签<br>1.对SEO优化有好处</p>
+<p><header>    定义页眉。通常是一些介绍信息、导航信息、站点标题或logo。可以在页面上出现很多次，可以为任何部分的头部定义</header></p>
+<p><nav>             定义页面的导航链接部分。用于包含表示链接的其他元素。</nav></p>
+<p><section>    表示文档中具体的组成部分，为页面上的内容分块，或为内容添加标题。</section></p>
+<p><article>    定义独立于文档的其他部分。一个帖子、一份报纸、某个微博条目、用户评论。</article></p>
+<p><footer>    定义某区域的脚注信息、友情链接、版权信息、作者信息。一个页面中可以有多个footer</footer></p>
+<p><aside>             额外信息，广告、侧边栏、引用信息</aside></p>
+<p><hgroup>    标题组</hgroup></p>
+<p><form>表单</form></p>
+<p>H5新增的表单</p>
+<p><input>type属性<br>text<br>password<br>checkbox<br>radio<br>button<br>submit<br>file<br>reset<br>imagehidden（隐藏域）不会被用户看到<br>ulr<br>tel<br>number<br>range<br>date<br>month<br>week<br>time<br>datetime<br>datetime-local<br>submit</p>
+<p>oninput事件  事件在用户输入时触发，该事件在input或textarea元素的值发生改变的时候触发<br>该事件类似于onchange事件 不同之处在于<br>oninput 事件在元素值发生变化立即触发<br>onchange在元素失去焦点时触发<br>onchange 事件也作用于<keygen>个<select>元素</select></p>
+<p>validityState对象<br>validityState对象是通过validity属性获取的，该对象有8个属性，分别针对8个方面的错误验证，属性均为布尔值<br>1<br>.valueMissing属性 必填的单元元素为空，如果表单元素设置了required特性，则为必填项，如果必填项元素为空，就无法通过表单验证<br>valueMissing属性会返回true否则返回false</p>
+<p>2.<br>typeMismatch属性<br>输入值与type类型不匹配<br>HTML5新增的表单类型如email number url等，都包含一个原始类型验证，如果用户输入的内同容与表单类型不符合，则typeMisamatch属性返回true，否则返回false<br>3.<br>patternMismatch属性<br>输入值pattern特性的正则不匹配<br>表单元素可通过pattern特性设置正则表达式的验证模式，如果输入的内容不符合验证模式规则，则patternMismatch属性将返回true否则返回false<br>4.<br>tooLong属性<br>输入的内容超过了表单元素的maxLength特性限定的字符长度<br>表单元素可使用maxLength特性设置输入内容的最大长度，虽然输入的时候会跟限制表单内容的长度，但在某种情况下，如通过程序设置，还是超出最大长度限制，则tllLong属性则为true，否则返回false<br>5.<br>rangeUnderflow属性<br>输入的值小于min特性的值<br>一般用于填写数值的表单元素，都可能会使min特性设置数值范围的最小值，如果输入的值小于最小值，则rangeUderflow属性返回true，否则返回false<br>6<br>.rangeOverflow属性<br>输入的值大于max的特性<br>一般用于填写数值的表单元素，也可能会只用max特性设置数值范围的最大值，如果输入的数值大于最大值，则rangOverflow属性返回true否则返回false<br>7.<br>stepMismatch属性<br>输入的值不符合step特性所推算的规则<br>用于填写数值的表单元素，可能血药同时设置min max 和step特性，这就限制了输入的数值必须与最小值与step特性值的倍数之和，如果范围0-10，steo特性值为2<br>因为合法值为该范围的偶数，其他数值均无法通过验证，如果输入值不符合要求，则stepMismatch属性返回true，否则返回false<br>8.<br>customError属性<br>使用自定义的验证错误信息<br>有时候，不太适合的使用浏览器内置的验证错误提示信息，需要自己定义，放输入值不符合语义规则时，会提示自定义的错误信息<br>通常是用setCustomValidity（）方法自定义错误信息<br>sertCustomValidity（message）会把错误提示信息定义为message，此时customError属性为true<br>setCustomValidity（“”）会清除自定义的错误信息，此时customError属性为false<br>setCustomValidity 自定义提示<br> 使用setCustomValidity 自定义提示后 validity。customError就会变为true，则checkValidity总会返回false<br>而且，表单验证是根据checkVakidity来决定是否提示的<br>checkVidity 表单验证</p>
+<p>canvas是一个用来展示绘图效果的标签，它与img类似，都是行内块元素<br>同一个页面可以有多个canvas标签<br>默认的宽与高是300*150 要设置cavas的宽与高，要借助canvas元素的属性<br>宽与高必须写，不能写在CSS里面<br>通过getContext方法来打开画布<br>ctx=canvas.getContext(“2d”)<br>canvas绘图的几个步骤<br>1.先移动钢笔到指定位置，设置路径的起始位置<br>ctx。moveTo（x轴移动的坐标，Y轴移动的坐标）<br>ctx。moveto（50，50）<br>2.开始画线条<br>ctx.lineTo(x轴移动的坐标，y轴移动的坐标)<br>ctx。lineTo(300,50)<br>ctx.lineto(300，300)<br>ctx.lineto(50，300)<br>ctx.lineto(50，50)<br>3.描边路径，根据当前所有路径，进行线条绘制</p>
+<p>ctx.stroke()</p>
+<p>var canvas=document.getElementById(“canvas”);<br>            var ctx=canvas.getContext(‘2d’);对象<br>            1.颜色、样式和阴影<br>                属性：<br>                ctx.fillStyle        设置或返回用于填充绘画的颜色、渐变或模式<br>                ctx.strokeStyle      设置或返回用于笔触的颜色、渐变或模式<br>                ctx.shadowColor      设置或返回用于阴影的颜色<br>                ctx.shadowBlur       设置或返回用于阴影的模糊级别<br>                ctx.shadowOffsetX    设置或返回阴影矩形状的水平距离<br>                ctx.shadowOffsetY    设置或返回阴影矩形状的垂直距离<br>                方法：<br>                ctx.createLinearGradient()     创建线性渐变(用在画布内容上)<br>                ctx.createPattern()            在指定的方向上重复指定的元素<br>                ctx.createRadialGradient()     创建放射状/环状的渐变(用在画布内容上)<br>                ctx.addColorStop()             规定渐变对象中的颜色和停止位置<br>            2.线条样式<br>                属性：<br>                ctx.lineCap      设置或返回线条的结束端点样式<br>                ctx.lineJoin     设置或返回两条线相交时，所创建的拐角类型<br>                ctx.lineWidth    设置或返回当前的线条宽度<br>                ctx.miterLimit   设置或返回最大斜接长度<br>            3.矩形<br>                方法：<br>                ctx.rect();          创建矩形<br>                ctx.fillRect();      绘制“被填充”的矩形<br>                ctx.strokeRect();    绘制矩形(无填充)<br>                ctx.clearRect();     在给定的矩形内清除指定的像素<br>            4.路径<br>                方法：<br>                fill()                                  填充当前绘图（路径）<br>                stroke()                        绘制已定义的路径<br>                beginPath()                        起始一条路径，或重置当前路径<br>                moveTo()                        把路径移动到画布中的指定点，不创建线条<br>                closePath()                        创建从当前点回到起始点的路径<br>                lineTo()                        添加一个新点，然后在画布中创建从该点到最后指定点的线条<br>                clip()                                  从原始画布剪切任意形状和尺寸的区域<br>                quadraticCurveTo()    创建二次贝塞尔曲线<br>                bezierCurveTo()              创建三次方贝塞尔曲线<br>                arc()                                  创建弧/曲线（用于创建圆形或部分圆）<br>                arcTo()                                  创建两切线之间的弧/曲线<br>                isPointInPath()              如果指定的点位于当前路径中，则返回 true，否则返回 false<br>            5.转换<br>                      方法：<br>                scale()                        缩放当前绘图至更大或更小<br>                rotate()              旋转当前绘图<br>                translate()              重新映射画布上的 (0,0) 位置<br>                transform()              替换绘图的当前转换矩阵<br>                setTransform()  将当前转换重置为单位矩阵。然后运行 transform()<br>            6.文本<br>                      属性：<br>                font                       设置或返回文本内容的当前字体属性<br>                textAlign             设置或返回文本内容的当前对齐方式<br>                textBaseline    设置或返回在绘制文本时使用的当前文本基线<br>                方法：<br>                fillText()              在画布上绘制“被填充的”文本<br>                strokeText()    在画布上绘制文本（无填充）<br>                measureText()     返回包含指定文本宽度的对象<br>            7.图像绘制<br>                方法：<br>                drawImage()    向画布上绘制图像、画布或视频<br>            8.像素操作<br>                属性:<br>                width    返回 ImageData 对象的宽度<br>                height    返回 ImageData 对象的高度<br>                data    返回一个对象，其包含指定的 ImageData 对象的图像数据<br>                方法:<br>                createImageData()    创建新的、空白的 ImageData 对象<br>                getImageData()              返回 ImageData 对象，该对象为画布上指定的矩形复制像素数据<br>                putImageData()               把图像数据（从指定的 ImageData 对象）放回画布上<br>            9.合成<br>                属性:<br>                globalAlpha                                            设置或返回绘图的当前 alpha 或透明值<br>                globalCompositeOperation    设置或返回新图像如何绘制到已有的图像上<br>            10.其他<br>                方法:<br>                save()                      保存当前环境的状态<br>                restore()             返回之前保存过的路径状态和属性<br>                createEvent()<br>                getContext()<br>                toDataURL()</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/23/辉辉的博客first/" data-id="cjdhg5kl80000woutibdsnv9b" class="article-share-link">Compartir</a>
+      <a data-url="http://yoursite.com/2018/01/23/辉辉的博客first/" data-id="cjdhgl13n0001mkutw8ttdk85" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -182,7 +202,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archivos</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
     </div>
@@ -192,7 +212,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Posts recientes</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
@@ -217,7 +237,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
